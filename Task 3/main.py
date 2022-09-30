@@ -94,27 +94,21 @@ while True:
         yellowText = "Yellow Square Detected!!"
         redText = "Red Star Detected!!"
         if isYellowSquare(firstSquare):
-            print("Square 1 has a Yellow Square")
             firstSquare = cv2.putText(firstSquare, yellowText, (100, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 0, 255), 2, cv2.LINE_AA)
 
         if isYellowSquare(secondSquare):
-            print("Square 2 has a Yellow Square")
             secondSquare = cv2.putText(secondSquare, yellowText, (100, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 0, 255), 2, cv2.LINE_AA)
 
         if isYellowSquare(thirdSquare):
-            print("Square 3 has a Yellow Square")
             thirdSquare = cv2.putText(thirdSquare, yellowText, (100, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 0, 255), 2, cv2.LINE_AA)
 
         if isRedStar(firstSquare):
-            print("Square 1 has a Red Star")
             firstSquare = cv2.putText(firstSquare, redText, (100, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 0, 255), 2, cv2.LINE_AA)
 
         if isRedStar(secondSquare):
-            print("Square 2 has a Red Star")
             secondSquare = cv2.putText(secondSquare, redText, (100, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 0, 255), 2, cv2.LINE_AA)
 
         if isRedStar(thirdSquare):
-            print("Square 3 has a Red Star")
             thirdSquare = cv2.putText(thirdSquare, redText, (100, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 0, 255), 2, cv2.LINE_AA)
 
         cv2.imshow("First Square", firstSquare)
